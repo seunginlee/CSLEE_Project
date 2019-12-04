@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MEDICISOFT</title>
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700" rel="stylesheet">
+	
+	<!-- Template Styles -->
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	
+	<!-- CSS Reset -->
+	<link rel="stylesheet" href="static/css/normalize.css">
+	
+	<!-- Milligram CSS minified -->
+	<link rel="stylesheet" href="static/css/milligram.min.css">
+	
+	<!-- Main Styles -->
+	<link rel="stylesheet" href="static/css/styles.css">
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="row">
+			<div class="column column-30 col-site-title"><a href="/" class="site-title float-left">추천시스템</a></div>
+			<!--form method='POST' action='/crawler'>
+				<div "column column-30>
+				<input type="text" name="keyword" value="토익" placeholder="크롤링"></div>
+		    <div "column column-30><input class="button-primary" type="submit" value="Send"></div>
+		
+		  </form-->
+			<div class="column column-30">
+				<div class="user-section"><a href="#">
+					<img src="http://via.placeholder.com/50x50" alt="profile photo" class="circle float-left profile-photo" width="50" height="auto">
+					<div class="username">
+						<h4>admin</h4>
+						<p>Administrator</p>
+					</div>
+				</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="sidebar" class="column">
+			<h5>Navigation</h5>
+			<ul>
+				<li><a href="/crawler"><em class="fa fa-home"></em> crawler</a></li>
+				<li><a href="/crawler_e"><em class="fa fa-bar-chart"></em>추천1</a></li>
+				<li><a href="#widgets"><em class="fa fa fa-clone"></em> 추천2</a></li>
+				<li><a href="/crawlering"><em class="fa fa fa-clone"></em>crawlering</a></li>
+				<!--li><a href="#forms"><em class="fa fa-pencil-square-o"></em> Forms</a></li>
+				<li><a href="#alerts"><em class="fa fa-warning"></em> Alerts</a></li>
+				<li><a href="#buttons"><em class="fa fa-hand-o-up"></em> Buttons</a></li>
+				<li><a href="#tables"><em class="fa fa-table"></em> Tables</a></li>
+				<li><a href="#grid"><em class="fa fa-columns"></em> Grid</a></li-->
+			</ul>
+		</div>
+		<section id="main-content" class="column column-offset-20">
+			<div class="row grid-responsive">
+				<div class="column page-heading">
+					<div class="large-card">
+						<h1>Hey there!</h1>
+						<p class="text-large">환영합니다.</p>
+						<p>You could also add a call to action button. <em>(it's basically a jumbotron)</em></p>
+						<a class="button">Call to action</a>
+					</div>
+				</div>
+			</div>
+			
+
+			<!--/div>
+			<p class="credit">추천시스템 <a href="/">추천시스템</a></p-->
+		</section>
+	</div>
+	
+	<script src="static/js/chart.min.js"></script>
+	<script src="static/js/chart-data.js"></script>
+	<script>
+	window.onload = function () {
+		var chart1 = document.getElementById("line-chart").getContext("2d");
+		window.myLine = new Chart(chart1).Line(lineChartData, {
+		responsive: true,
+		scaleLineColor: "rgba(0,0,0,.2)",
+		scaleGridLineColor: "rgba(0,0,0,.05)",
+		scaleFontColor: "#c5c7cc"
+		});
+		var chart2 = document.getElementById("bar-chart").getContext("2d");
+		window.myBar = new Chart(chart2).Bar(barChartData, {
+		responsive: true,
+		scaleLineColor: "rgba(0,0,0,.2)",
+		scaleGridLineColor: "rgba(0,0,0,.05)",
+		scaleFontColor: "#c5c7cc"
+		});
+		var chart4 = document.getElementById("pie-chart").getContext("2d");
+		window.myPie = new Chart(chart4).Pie(pieData, {
+		responsive: true,
+		segmentShowStroke: false
+		});
+		var chart5 = document.getElementById("radar-chart").getContext("2d");
+		window.myRadarChart = new Chart(chart5).Radar(radarData, {
+		responsive: true,
+		scaleLineColor: "rgba(0,0,0,.05)",
+		angleLineColor: "rgba(0,0,0,.2)"
+		});
+		var chart6 = document.getElementById("polar-area-chart").getContext("2d");
+		window.myPolarAreaChart = new Chart(chart6).PolarArea(polarData, {
+		responsive: true,
+		scaleLineColor: "rgba(0,0,0,.2)",
+		segmentShowStroke: false
+		});
+	};
+	</script>			
+
+</body>
+</html> 
